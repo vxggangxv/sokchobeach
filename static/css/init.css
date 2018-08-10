@@ -1,7 +1,11 @@
 @charset "utf-8";
 
 /*해더*/
+.header,
+.header .wrap {height: 106px;}
 .header {position: absolute; left: 0; top: 0;}
+.header .wrap .logo {margin-top: -31px;}
+.header .wrap .area {padding-top: 42px;}
 
 /*메인비쥬얼*/
 .contents .main {position: relative; /*overflow: hidden;*/}
@@ -69,7 +73,7 @@
 .contents .wrap.cmStyle .tit {text-align: center;}
 .contents .wrap.cmStyle .tit .sokcho {text-transform: uppercase; font-size: 18px; display: inline-block; text-indent: 2px; margin-bottom: 2px; background: #fff; border: 2px solid #61a0c8; padding: 8px 9px 6px; line-height: 1;}
 .contents .wrap.cmStyle .tit .sokcho-2 {font-size: 18px;}
-.contents .wrap.cmStyle .tit .big {display: block; letter-spacing: -1px; margin-top: 3px; font-size: 40px;}
+.contents .wrap.cmStyle .tit .big {display: block; letter-spacing: -1px; margin-top: 5px; font-size: 40px;}
 
 /*
 .contents .wrap.cmStyle .tit .plus {position: relative; display: inline-block; width: 42px; height: 42px; box-sizing: border-box; border: 1px solid #a8a8a8; border-radius: 50%; vertical-align: middle; background: #fff; top: -4px; margin-left: 5px;}
@@ -79,9 +83,8 @@
 .contents .wrap.cmStyle .tit .plus .obj:after {width: 1px; height: 15px; background: #a4a4a4; left: 50%; margin-top: -7px; top: 50%;}
 */
 
-
 /*속초8경*/
-.contents .view {background: url(../../img/bg_view.jpg) no-repeat center / cover; padding-bottom: 250px !important;}
+.contents .view {background: url(../../img/bg_view.jpg) no-repeat center / cover; padding-bottom: 350px !important;}
 .contents .view .area {}
 .contents .view .area .list {margin-top: 28px;}
 .contents .view .area .list + .list {margin-top: 35px;}
@@ -96,7 +99,7 @@
 .contents .view .area .list > li dl dd {font-size: 17px; color: #4c4c4c; line-height: 1.4; padding: 0 7px; height: 70px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; letter-spacing: -1px;}
 
 /*관광지*/
-.contents .tourist {margin-top: -250px;}
+.contents .tourist {margin-top: -350px;}
 .contents .tourist .area {}
 .contents .tourist .area .h3-tit {position: relative;font-size: 26px; margin: 30px 0 15px;}
 .contents .tourist .area .h3-tit > * {vertical-align: middle;}
