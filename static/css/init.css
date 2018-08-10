@@ -4,9 +4,10 @@
 .header {position: absolute; left: 0; top: 0;}
 
 /*메인비쥬얼*/
-.contents .main {}
-.contents .main .slide {padding-top: 427px; box-sizing: border-box; color: #fff; height: 1088px;}
-.contents .main .slide .mainTxt {text-align: center;}
+.contents .main {position: relative; /*overflow: hidden;*/}
+.contents .main .slide-container {}
+.contents .main .slide {/*padding-top: 427px;*/ box-sizing: border-box; color: #fff; height: 100%; /*height: 1088px;*/ box-sizing: border-box;}
+.contents .main .slide .mainTxt {position: absolute; width: 100%; left: 0; top: 50%; margin-top: -100px; z-index: 1; text-align: center;}
 .contents .main .slide .mainTxt > * {position: relative; text-shadow: 3px 3px 2px rgba(0,0,0, .25); letter-spacing: -0.7px;}
 .contents .main .slide .mainTxt .p-1 {font-size: 29px; text-indent: 2px;}
 .contents .main .slide .mainTxt h2 {font-size: 74px; margin-top: 5px; letter-spacing: -2px;}
@@ -16,18 +17,24 @@
 .contents .main .slide-1 {background: #eee url(http://img.sampobeach.co.kr/mv_1.jpg) no-repeat center;}
 .contents .main .slide-2 {background: #eee url(http://img.sampobeach.co.kr/mv_2.jpg) no-repeat center;}
 */
+
+.contents .main .slide-1:before {background: #eee url(../../img/mv_1.jpg) no-repeat center / cover;}
+.contents .main .slide-2:before {background: #eee url(../../img/mv_2.jpg) no-repeat center / cover;}
 .contents .main .slide:before {content: ""; display: block; position: absolute; width: 100%; height: 100%; left: 0; top: 0;
 	-webkit-transition: all 5.5s 0.1s;
 	-ms-transition: all 5.5s 0.1s;
 	-o-transition: all 5.5s 0.1s;
 	transition: all 5.5s 0.1s;
 }
+/*
 .contents .main .slide.active:before{
 	-webkit-transform: scale(1.05);
 	-ms-transform: scale(1.05);
 	-o-transform: scale(1.05);
 	transform: scale(1.05);
 }
+*/
+
 .contents .main .slide .mainTxt > * {
 	top: 6px; opacity: 0; visibility: hidden;
 	-webkit-transition: all 1s 0.2s;
@@ -35,27 +42,14 @@
 	-o-transition: all 1s 0.2s;
 	transition: all 1s 0.2s;
 }
-/*
-.contents .main .slide .mainTxt .p-3 {
-	-webkit-transition: all 1.2s 0.8s;
-	-ms-transition: all 1.2s 0.8s;
-	-o-transition: all 1.2s 0.8s;
-	transition: all 1.2s 0.8s;
-}
-*/
-.contents .main .slide h2 {}
 .contents .main .slide.active .mainTxt > * {top: -6px; opacity: 1; visibility: visible;}
+
+.contents .main .slide h2 {}
 .contents .main .slide.active .p-1 {}
 .contents .main .slide.active h2 {}
 .contents .main .slide.active .p-2 {}
 .contents .main .slide.active .p-3 {}
 
-/*
-.contents .main .slide-1:before {background: #eee url(http://img.sampobeach.co.kr/mv_1.jpg) no-repeat center;}
-.contents .main .slide-2:before {background: #eee url(http://img.sampobeach.co.kr/mv_2.jpg) no-repeat center;}
-*/
-.contents .main .slide-1:before {background: #eee url(../../img/mv_1.jpg) no-repeat center;}
-.contents .main .slide-2:before {background: #eee url(../../img/mv_2.jpg) no-repeat center;}
 
 .contents .main .weather {position: absolute; top: 165px; left: 50%; margin-left: -600px; width: 1180px; z-index: 99;}
 .contents .main .weather .area {position: absolute; right: 5px; height: 96px; padding-left: 20px; box-sizing: border-box;}
