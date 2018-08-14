@@ -19,6 +19,7 @@
 .contents .tourist .area .h3-tit:before {content: ""; display: inline-block; width: 5px; height: 14px; background: #c0c0c0; vertical-align: middle; margin-right: 4px;}
 .contents .tourist .area .list + .list {margin-top: 5px;}
 .contents .tourist .area .list > li {float: left; width: 48.6%; margin-left: 2.4%; margin-top: 15px; overflow: hidden;}
+.contents .tourist .area .list > li figure {border: 1px solid #a9a7a8; box-sizing: border-box;}
 .contents .tourist .area .list > li:first-child, .contents .tourist .area .list > li:nth-child(2) {margin-top: 5px;}
 .contents .tourist .area .list > li:nth-child(2n-1) {margin-left: 0;}
 /*.contents .tourist .area .list > .link-tour {cursor:pointer}*/

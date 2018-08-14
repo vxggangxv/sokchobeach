@@ -58,6 +58,7 @@ label {cursor: pointer;}
 .wrapper .wrap .weather > * {position: relative; display: inline-block; vertical-align: bottom;}
 .wrapper .wrap .weather .s1 {top: 1px;}
 .wrapper .wrap .weather .mg {width: 1px; height: 12px; background: #fff; margin: 0 5px 0 6px; top: -2px;}
+.wrapper .wrap .weather .mg {margin-top: -4px;}
 .wrapper .wrap .weather .mg, .wrapper .wrap .weather .c {margin-top: 0;}
 .wrapper .wrap .weather .c {font-family: "Nanum gothic", sans-serif;}
 
