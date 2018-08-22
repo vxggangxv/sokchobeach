@@ -3,7 +3,7 @@
 /*해더*/
 .header,
 .header .wrap {height: 106px;}
-.header {position: absolute; left: 0; top: 0;}
+.header {position: absolute; left: 0; top: 0; background: none;}
 .header .wrap .logo {margin-top: -31px;}
 .header .wrap .area {padding-top: 42px;}
 
